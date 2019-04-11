@@ -37,8 +37,8 @@ def login(list, n = 1):  # list:数据     n:循环次数
         exit(2)
     for i in range(n):
         s = list[i]
-        username = str(int(s[u'userName']))
-        password = str(int(s[u'password']))
+        username = str((s[u'userName']))
+        password = str((s[u'password']))
         if username.isspace() or password.isspace() or len(username) == 0 or len(password) == 0:  # 判断输入的用户名或密码是否为空
             print('用户名或密码不能为空')
             exit(3)
